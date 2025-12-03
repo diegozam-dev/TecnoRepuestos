@@ -18,8 +18,6 @@ describe('POST /api/productos/nuevo', () => {
       .send(datosDeEntrada)
       .set('Accept', 'application/json');
 
-    console.log(response);
-
     expect(response.statusCode).toBe(201);
   });
 
